@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS</title>
+
+  <style>
+    article {
+      width: 200px;
+      /*width é largura*/
+      margin: 0 auto;
+      /*0 significa sem margem pra cima e pra baixo e o auto ele fica automaticamente distribuido os espaços laterais, pelo tamanho do nosso box, que no caso definimos como 200px de largura*/
+      /*Então tudo vai ser distribuido com espaço lateral igual, e toda margem lateral vai ser automatica ao tamanho dele*/
+    }
+
+    .container {
+      background: red;
+    }
+
+    #texto-1 {
+      color: #ffffff;
+    }
+
+    #texto-2 {
+      color: blueviolet;
+      padding: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <article>
+    <section class="container">
+      <!--Por que o nome é só container? Porque esta sendo compartilhado com outras sections!-->
+      <p id="texto-1">
+        Aqui é um Novo Texto 1.
+      </p>
+    </section>
+
+    <section class="container">
+      <!--Ou seja class, podemos ter mais do que uma no nosso html, compartilhando das mesma propriedades-->
+      <p id="texto-2">
+        <!--Agora id por página, só podemos ter 1 igual. Tanto que o id de cima, tem um identificar diferente desse.-->
+        <!--id deve ser único, diferente de class que pode ter em vários lugares-->
+        Aqui é um Novo Texto 2.
+      </p>
+    </section>
+  </article>
+
+</body>
+
+</html>

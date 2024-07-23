@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS</title>
+  <style>
+    /*0.0.0.1 => Todos os nossos <p> estão com essa especificidade*/
+    p {
+      color: red;
+    }
+
+    /*0.0.1.1 => Novo ponto de especificidade por terem a class, os 2 e 3 p ganharam uma nova cor*/
+    .nova-cor {
+      color: aquamarine;
+    }
+
+    /* 0.1.0.1 => Só vai somar se na tag, estiver o id e a class. Como usando só o id, ele ira especificar somente ele no binário*/
+    /* 0.1.1.1 => Adicionando a class a tag, agora sim vai contabilizar*/
+    #nova-cor-id-1,
+    #nova-cor-id-2 {
+      /*Quando eu coloco virgula, com 2 ids ou 2 classes, significa que os dois compartilham da mesma propriedade, que seria a cor blueviolet*/
+      color: blueviolet;
+    }
+
+    /*1.1.1.1*/
+  </style>
+</head>
+
+<body>
+  <p>Texto 1.</p>
+  <p class="nova-cor">Texto 2.</p>
+  <p class="nova-cor">Texto 3.</p>
+  <p id="nova-cor-id-1" class="nova-cor">Texto 4.</p>
+  <!--1.1.1.1-->
+  <p id="nova-cor-id-2" class="nova-cor" style="color:darkolivegreen;">Texto 5.</p>
+  <p>Texto 6.</p>
+</body>
+
+</html>
