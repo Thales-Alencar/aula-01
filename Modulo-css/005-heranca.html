@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS</title>
+
+  <style>
+    article {
+      font-size: 30px;
+      /*font-size tam da fonte, 30px unidade de medida*/
+      color: #1E90FF;
+    }
+
+    article section article p {
+      /*Pai, dentro do senhor, a sua filha, que tem seu neto, vai falar em vermelho/Aqui no caso
+      entra como especificidade, mas deixou de herdar o azul do pai, mas continua com o font-size 30px
+      herdando apenas o tamanho.
+
+      Ele pode herdar, tudo ou parcialmente os atributos do avÔ ou do pai etc...*/
+      color: red;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <article> <!--Pai-->
+    <section> <!--Filho 1, herda tudo do pai-->
+      <p>Filha</p>
+
+      <article>
+        <p>Neto filho da filha</p>
+      </article>
+
+    </section>
+
+    <section> <!--Filho 2-->
+      <p>Filho</p>
+    </section>
+  </article>
+
+</body>
+
+</html>
