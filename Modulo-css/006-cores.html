@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS</title>
+  <style>
+    div {
+      color: #fff;
+      padding: 30px;
+      text-align: center;
+      /*Centraliza o texto no nosso código*/
+    }
+
+    div:nth-child(1) {
+      /*nth-child() é um seletor novo, ele vai pra facilitar, ao inves de
+      passar um monte de classes, 
+      passamos a posição dos nossos elementos em um grupo e assim todos os 
+      que usarem esse seletor teram as cores.*/
+      background: #009246;
+    }
+
+    div:nth-child(2) {
+      background: #F1F2F1;
+    }
+
+    div:nth-child(3) {
+      background: #CE2B37;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    #009246
+  </div>
+
+  <div>
+    #F1F2F1
+  </div>
+
+  <div>
+    #CE2B37
+  </div>
+</body>
+
+</html>
