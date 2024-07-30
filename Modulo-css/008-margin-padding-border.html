@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Margen, Padding e Border</title>
+  <style>
+    /* 0 0 0 0
+    1º 0 => Seria o topo da margen, border, padding
+    2º 0 => Representa lado direito
+    3º 0 => Seria o Bottom a parte de baixo
+    4º 0 => Seria nossa esquerda,
+    Funciona em ordem de relógio.
+    */
+    div {
+      background: hotpink;
+      color: #fff;
+      margin: 150px 10px 30px 50px;
+      /*Da espaço no que ta fora da div por exemplo,
+      o <hr /> a margin da div o espaço empurrando pra fora
+      Reusmindo margin empurra da afastamento das coisas dos lado e pro outro*/
+      padding: 30px 50px 45px 150px;
+      /*Padding da afastamento interno, empurra o que ta de dentro, a cada medida que vamos colocando
+      preenche o zero respectivo a posição, topo, direita,baixo,esqueda...*/
+      border: 10px solid indigo;
+      /*Colocando 10px, ele cria uma borda em torno dela e as medidas se autodestribuem, na borda para mudar
+      os 0 deve ser feito em especifico de cada lado*/
+      border-top: 18px dashed indigo;
+      border-right: 30px solid indigo;
+      border-left: 50px solid indigo;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    Texto
+  </div>
+  <hr />
+
+  <div>
+    Texto
+  </div>
+  <hr />
+
+</body>
+
+</html>

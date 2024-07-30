@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS</title>
+  <style>
+    /*
+      3 principais unidades de medidas:
+      -1px(Ex: Monitor, tem varios pontinhos esses pontinhos seriam os pixels, então px seria esse pontinho do monitor)
+      -em(Ex: <div> é o elemento pai, e suponhamos que colocamos 16px
+        e cada 1em é o tamanho do pai, se eu coloco 2em ele dobra do tamanho do pai
+        ex: boto 2em no p, fica 32px e etc...)
+      -rem(Ex: funciona quase da mesma forma, mas ele pega o elemento root daquele arquivo,
+      caso não tenha elemento root, 1rem => 18px, 2rem => 36px.)
+      -%(Ex: se temos 16px, 50% seria => 8px,
+      se for uns 200% => 32px).
+      (Não é bem uma unidade de medida, mas se encaixa par medir os elementos)
+    */
+
+    div {
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 1em;
+      /*Dobra o tamanho*/
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    Texto Xpty
+    <p>Texto Xpto</p>
+  </div>
+
+</body>
+
+</html>
